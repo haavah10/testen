@@ -1,0 +1,74 @@
+python functions and characters
+
+print "Text here" # prints out a line on the screen
+print 'Text here' # alternative to " mark
+
+def[name]([arguments]): # for making functions that you can use later on (when calling
+						them).
+
+
+math:
+	"+" # adding, for adding numbers together
+	"-" # subtracting, for subtracting numbers
+	"*" # multiplying, for multiplying numbers
+	"/" # dividing, for dividing numbers
+	"<" # less-than, for checking that numbers on one side is less than the number on the other side
+	">" # greater-than, for checking that numbers on one side is greater than the number on the other side
+	"%" # percent, for finding out the remainder of a number
+
+escape sequence
+\n # same as 'return'
+\\ # gives one backslash
+\' # gives one single-quote, for not being interrupted in the middle of a string
+\" # same as above only for double-quotes
+\t # same as 'tab', 4 spaces
+	
+
+str(value) # makes the value into a string
+int(value) # makes the value into an integer
+float(value) # floats the number so you can use decimals
+
+input([prompt]) # asks the user for input, input can be used to be stored in a variable
+raw_input([prompt]) # same as regular input, but safer
+
+[var] = "text" # gives your variable a value to display
+
+"_" # for using in naming as a space will cancel the naming after the space
+
+#[text] # for making comments, will be ignored when running the script, but is used to explain the code
+
+[]=[] # one object is equal to another object
+
+
+"[text] %d" % [var] # used for inserting a integer into a string
+"[text] %s" % [var] # used for inserting a string into a string
+"[text] %r" % [var] # used for inserting anything into a string, for example if having both
+					integers and strings in a variable
+"[text] %d [text] %s" % ([var], [var]) # if having multiple variables to display in one line
+
+open([filename], '[mode]') = f/ [var] # opens a file so you can do operations to it
+	modes:
+	r # read only
+	w # write only
+	r+ # both read and write
+
+we have now opened a file that I called 'f', we can then do different operations to it:
+
+
+f.read() # print out text to the screen, can also be used in functions
+f.write(string) # writes the string into the file
+f.close() # closes the document so it cant be either read or written on
+f.tell # tells you in bytes the position you are in your file
+f.readline() # reads the line where the cursor are in your file
+f.flush() # refreshes the file, for example if you have written something and want to read the new text you have written
+f.seek([integer]) # makes the cursor go to a specific position in the file
+f.truncate() # empties out the file completely, not deleting the file
+
+
+
+
+from [library] import [module] # imports a module from a specific library, put in top of script
+import [module] # imports all the modules with that name
+from os.path import exist # to check if a document exists or not, returns TRUE or FALSE
+#example:
+exists([filename])
